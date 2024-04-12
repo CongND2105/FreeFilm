@@ -1,0 +1,22 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #180047;
+}
+
+.logo {
+  margin-left: 1%;
+  width: 400px;
+}
+
+@media screen and (max-width:475px) {
+  .nav-container{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .logo{
+    width: 100%
+  }
+}

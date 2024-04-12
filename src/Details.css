@@ -1,0 +1,77 @@
+.details-page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #180047;
+    height: 100%;
+}
+
+.backdrop-image{
+    position: relative;
+    height: 100%;
+}
+
+.info {
+    background: linear-gradient(rgba(24,0,71,0), rgba(24,0,71,1));
+    height: 60%;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    font-size: 1em;
+}
+
+.movie-title{
+    font-size: 1.3em;
+    width: 100%;
+}
+
+.cover-image{
+    height: 60%;
+    border-radius: 15px;
+}
+
+.date-and-runtime{
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-overview-section{
+    width: 40%;
+}
+
+footer{
+    background: #180047;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 10em;
+}
+
+@media screen and (max-width: 750px){
+    .cover-image{
+        height: 50%
+    }
+
+    .info{
+        font-size: 0.6em;
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .info{
+        position: relative;
+        flex-direction: column;
+        padding-top: 3em;
+    }
+
+    .cover-image{
+        height: 20em;
+    }
+
+    .movie-overview-section{
+        width: 80%
+    }
+}
